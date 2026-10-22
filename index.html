@@ -311,5 +311,7 @@ footer .cr{margin-top:1.4em;font-size:.68rem;color:#a08f78}
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<!-- Vercel Web Analytics（訪問数カウント） -->
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
